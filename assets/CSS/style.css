@@ -1,0 +1,19 @@
+/*********************Header*******************/
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header img {
+  width: 40%;
+}
+
+/*********************Position*******************/
+.position {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
