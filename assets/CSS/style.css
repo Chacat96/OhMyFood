@@ -18,7 +18,11 @@
   align-items: center;
   background-color: #EAEAEA;
   height: 40px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.position p {
+  text-align: center;
+  margin-left: 10px;
 }
 
 /*********************Reservation*******************/
@@ -27,11 +31,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 4px;
   height: 150px;
-  padding: 20px;
+  padding: 40px;
   gap: 20px;
   background-color: #F6F6F6;
+}
+.reservation h1 {
+  text-align: center;
 }
 .reservation p {
   text-align: center;
@@ -50,6 +57,10 @@
   display: flex;
   flex-direction: column;
   height: 370px;
+  padding: 40px 0 40px 0;
+}
+.fonctionnement h1 {
+  padding-left: 20px;
 }
 .fonctionnement div {
   display: flex;
@@ -62,15 +73,27 @@
   margin: auto;
   gap: 20px;
 }
+.fonctionnement p {
+  font-weight: bold;
+}
 .fonctionnement span {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  transform: translateX(-10px);
   width: 24px;
   height: 24px;
   border-radius: 50%;
   color: white;
   background-color: #9356DC;
+}
+.fonctionnement i {
+  margin-left: 25px;
+  color: #7e7e7e;
+}
+.fonctionnement .shop {
+  color: #9356DC;
 }
 
 /*********************Restaurants*******************/
@@ -81,8 +104,11 @@
   background-color: #F6F6F6;
   padding: 40px 0 40px 0;
 }
+.restaurants h1 {
+  padding-left: 20px;
+}
 .restaurants .restaurants__box {
-  width: 80%;
+  width: 90%;
   height: 220px;
   margin: auto;
   background-color: white;
@@ -110,6 +136,37 @@
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+.restaurants .restaurants__box__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants i {
+  margin-right: 20px;
+}
+.restaurants .coeur:hover {
+  background-color: red;
+}
+
+/*********************footer*******************/
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+}
+.footer li {
+  margin-bottom: 10px;
+}
+.footer .footer__li {
+  font-weight: 500;
+}
+.footer i {
+  margin-right: 10px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
