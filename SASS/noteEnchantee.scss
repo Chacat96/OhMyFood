@@ -6,8 +6,12 @@ $background : #F6F6F6;
 
 
 /*********************Header*******************/
-
 .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +58,12 @@ $background : #F6F6F6;
 .box {
     display: flex;
     flex-direction: column;
-    gap : 20px;
+    gap : 15px;
     margin-bottom: 20px;
+}
+
+.titre_menu {
+    margin-left: 20px;
 }
 
 .box1__plat {
