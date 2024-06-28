@@ -33,6 +33,7 @@
   background-color: #F6F6F6;
   transform: translateY(-50px);
   border-radius: 20px 20px 0 0;
+  margin-bottom: -50px;
 }
 
 .titre {
@@ -154,6 +155,7 @@
   .menu {
     width: 80%;
     margin: auto;
+    margin-bottom: -50px;
   }
   .titre {
     justify-content: center;
@@ -220,22 +222,12 @@
   }
   /*********************footer*******************/
   .footer {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .footer ul {
     display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    color: white;
-    padding: 20px;
     gap: 20px;
-  }
-  .footer li {
-    margin-bottom: 10px;
-  }
-  .footer .footer__li {
-    font-weight: 500;
-  }
-  .footer i {
-    margin-right: 10px;
-    color: white;
   }
 }
 /*************************************************Tablette***************************************************************/
@@ -256,6 +248,7 @@
   .menu {
     width: 80%;
     margin: auto;
+    margin-bottom: -50px;
   }
   .titre {
     justify-content: center;
@@ -322,23 +315,13 @@
   }
   /*********************footer*******************/
   .footer {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .footer ul {
     display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    color: white;
-    padding: 20px;
-    gap: 20px;
-  }
-  .footer li {
-    margin-bottom: 10px;
-  }
-  .footer .footer__li {
-    font-weight: 500;
-  }
-  .footer i {
-    margin-right: 10px;
-    color: white;
+    gap: 15px;
   }
 }
 
-/*# sourceMappingURL=noteEnchantee.css.map */
+/*# sourceMappingURL=menu.css.map */

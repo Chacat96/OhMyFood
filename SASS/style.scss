@@ -157,7 +157,7 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
             border: none;
             color: #008766;
             width: 80px;
-            height: 25px;
+            padding: 8px;
             position: absolute;
             transform: translateX(-100px) translateY(10px);
         }
@@ -301,24 +301,12 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
     /*********************footer*******************/
 
     .footer {
-        display: flex;
-        flex-direction: column;
-        background-color: #353535;
-        color: white;
-        padding: 20px;
-        gap: 20px;
+        flex-direction: row-reverse;
+        gap: 50px;
 
-        li {
-            margin-bottom: 10px;
-        }
-
-        .footer__li {
-            font-weight: 500;
-        }
-
-        i {
-            margin-right: 10px;
-            color: white;
+        ul {
+            display: flex;
+            gap: 20px;
         }
     }
 
@@ -391,24 +379,12 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
     /*********************footer*******************/
 
     .footer {
-        display: flex;
-        flex-direction: column;
-        background-color: #353535;
-        color: white;
-        padding: 20px;
-        gap: 20px;
+        flex-direction: row-reverse;
+        gap: 50px;
 
-        li {
-            margin-bottom: 10px;
-        }
-
-        .footer__li {
-            font-weight: 500;
-        }
-
-        i {
-            margin-right: 10px;
-            color: white;
+        ul {
+            display: flex;
+            gap: 15px;
         }
     }
 
