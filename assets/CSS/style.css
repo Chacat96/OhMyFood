@@ -32,12 +32,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 4px;
-  height: 150px;
   padding: 40px;
   gap: 20px;
   background-color: #F6F6F6;
 }
-.reservation h1 {
+.reservation h2 {
   text-align: center;
 }
 .reservation p {
@@ -50,6 +49,10 @@
   color: white;
   width: 218px;
   height: 50px;
+}
+.reservation button:hover {
+  transition-duration: 2s;
+  filter: brightness(1.45);
 }
 
 /*********************Fonctionnement*******************/
@@ -145,8 +148,12 @@
 .restaurants i {
   margin-right: 20px;
 }
-.restaurants .coeur:hover {
-  background-color: red;
+.restaurants .coeur:hover::before {
+  font-weight: 900;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /*********************footer*******************/

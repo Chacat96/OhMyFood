@@ -3,7 +3,7 @@ $Secondaire : #FF79DA;
 $Tertiaire : #99E2D0;
 $grey : #EAEAEA;
 $background : #F6F6F6;
-
+$degradation : linear-gradient(to top, $Primaire, $Secondaire);
 
 /*********************Header*******************/
 
@@ -43,12 +43,11 @@ $background : #F6F6F6;
     align-items: center;
     justify-content: center;
     margin-top: 4px;
-    height: 150px;
     padding: 40px;
     gap: 20px;
     background-color: $background;
 
-    h1 {
+    h2 {
         text-align: center;
     }
 
@@ -59,10 +58,15 @@ $background : #F6F6F6;
     button {
         border-radius: 25px;
         border-style: none;
-        background: linear-gradient(to top, $Primaire, $Secondaire);
+        background: $degradation;
         color: white;
         width: 218px;
         height: 50px;
+    }
+
+    button:hover {
+        transition-duration: 2s;
+        filter: brightness(1.45);
     }
 }
 
@@ -109,7 +113,7 @@ $background : #F6F6F6;
 
     i {
         margin-left: 25px;
-       color: #7e7e7e;
+        color: #7e7e7e;
     }
 
     .shop {
@@ -176,8 +180,12 @@ $background : #F6F6F6;
         margin-right: 20px;
     }
 
-    .coeur:hover {
-       background-color: red;
+    .coeur:hover::before {
+        font-weight: 900;
+        background: linear-gradient(to top, $Primaire, $Secondaire);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 }
 
