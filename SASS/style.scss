@@ -62,11 +62,13 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         color: white;
         width: 218px;
         height: 50px;
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1)
     }
 
     button:hover {
         transition-duration: 2s;
         filter: brightness(1.45);
+        box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.4)
     }
 }
 
@@ -82,7 +84,14 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         padding-left: 20px;
     }
 
-    div {
+    .fonctionnement__content {
+        display: flex;
+        flex-direction: column;
+        height: 370px;
+        padding: 40px 0 40px 0;
+    }
+
+    .fonctionnement__box {
         display: flex;
         align-items: center;
         width: 322px;
@@ -211,4 +220,97 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         margin-right: 10px;
         color: white;
     }
+}
+
+/*************************************************desktop***************************************************************/
+
+@media screen and (min-width: 1024px) {
+
+    /*********************Header*******************/
+
+    .header {
+        height: 90px;
+
+        img {
+            width: 200px;
+            height: 30px;
+        }
+    }
+
+    /*********************Position*******************/
+
+    .position {
+        box-shadow: none;
+    }
+
+    /*********************Reservation*******************/
+
+    .reservation {
+        margin-top: 0;
+        gap: 30px;
+    }
+
+    /*********************Fonctionnement*******************/
+
+    .fonctionnement {
+        height: 180px;
+        margin: auto;
+        width: 80%; // voir pour display à la place
+
+        .fonctionnement__content {
+            flex-direction: row;
+            padding: 0;
+            height: 100px; //A modifier
+        }
+    }
+
+    /*********************Restaurants*******************/
+
+    .restaurants {
+
+        h2 {
+            width: 80%;
+            margin: auto;
+        }
+
+        .restaurant__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            gap: 40px;
+        }
+
+        .restaurants__box {
+            width: 500px;
+            height: 250px;
+
+        }
+    }
+
+    /*********************footer*******************/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #353535;
+        color: white;
+        padding: 20px;
+        gap: 20px;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer__li {
+            font-weight: 500;
+        }
+
+        i {
+            margin-right: 10px;
+            color: white;
+        }
+    }
+
 }
