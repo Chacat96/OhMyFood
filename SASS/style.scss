@@ -5,6 +5,52 @@ $grey : #EAEAEA;
 $background : #F6F6F6;
 $degradation : linear-gradient(to top, $Primaire, $Secondaire);
 
+
+
+/*********************Loader*******************/
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 2.5s forwards; /* Change la durée du loader */
+}
+
+#loader::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 6px solid $Primaire;
+    border-top: 5px solid #f3f3f3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Change la vitesse de rotation du loader */
+}
+
+/* Animation de rotation */
+@keyframes spin {
+       100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation pour faire disparaître le loader */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 /*********************Header*******************/
 
 .header {

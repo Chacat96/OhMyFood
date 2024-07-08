@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************Header*******************/
 .header {
   display: flex;
@@ -52,6 +53,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  transition: 2s;
 }
 
 /*********************MENU*******************/
@@ -78,24 +80,96 @@
 }
 
 .box1__plat {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: white;
   width: 90%;
-  height: 50px;
+  height: 70px;
   margin: auto;
   border-radius: 15px;
-  padding: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initialement caché */
+  animation: fadeInUp 1.2s forwards; /* Animation de 0.6s */
 }
 .box1__plat .bold {
   font-weight: bold;
 }
 .box1__plat .box1__plat__description {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 6px;
+  gap: 10px;
+  padding: 10px;
+}
+.box1__plat .box1__plat__prix {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+/**********************Animation plat progressif*******************/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.box1__plat:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.box1__plat:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.box1__plat:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.box1__plat:nth-child(5) {
+  animation-delay: 1.1s;
+}
+
+/*********************Animation Checkmark*******************/
+.checkmark {
+  position: absolute;
+  right: -50px; /* Position de départ en dehors de la vue */
+  height: 100%;
+  width: 50px;
+  padding: 0;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.checkmark i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.box1__plat:hover .checkmark {
+  right: 0; /* Position finale visible */
+  opacity: 1;
+}
+
+.box1__plat:hover .box1__plat__prix {
+  transform: translateX(-50px); /* Déplacer la div prix à gauche */
+  transition: 0.5s ease-in-out;
+}
+
+.box1__plat:not(:hover) .box1__plat__prix {
+  transform: translateX(0); /* Déplacer la div prix à gauche */
+  transition: 0.5s ease-in-out;
 }
 
 /*********************BOUTON*******************/
@@ -182,26 +256,6 @@
     height: 3px;
     background-color: #99E2D0;
   }
-  .box1__plat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    width: 90%;
-    height: 50px;
-    margin: auto;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  .box1__plat .bold {
-    font-weight: bold;
-  }
-  .box1__plat .box1__plat__description {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6px;
-  }
   /*********************BOUTON*******************/
   .bouton {
     display: flex;
@@ -274,26 +328,6 @@
     width: 40px;
     height: 3px;
     background-color: #99E2D0;
-  }
-  .box1__plat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    width: 90%;
-    height: 50px;
-    margin: auto;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  .box1__plat .bold {
-    font-weight: bold;
-  }
-  .box1__plat .box1__plat__description {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6px;
   }
   /*********************BOUTON*******************/
   .bouton {
