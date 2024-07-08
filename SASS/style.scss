@@ -242,6 +242,7 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        transition: 2s;
     }
 }
 
