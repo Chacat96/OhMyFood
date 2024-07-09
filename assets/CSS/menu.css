@@ -101,7 +101,13 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  width: 80%;
   padding: 10px;
+}
+.box1__plat .box1__plat__description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .box1__plat .box1__plat__prix {
   display: flex;
@@ -139,9 +145,9 @@
 /*********************Animation Checkmark*******************/
 .checkmark {
   position: absolute;
-  right: -50px; /* Position de départ en dehors de la vue */
+  right: 0px; /* Position de départ en dehors de la vue */
   height: 100%;
-  width: 50px;
+  width: 0px;
   padding: 0;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
@@ -160,6 +166,7 @@
 .box1__plat:hover .checkmark {
   right: 0; /* Position finale visible */
   opacity: 1;
+  width: 50px;
 }
 
 .box1__plat:hover .box1__plat__prix {
@@ -169,7 +176,7 @@
 
 .box1__plat:not(:hover) .box1__plat__prix {
   transform: translateX(0); /* Déplacer la div prix à gauche */
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /*********************BOUTON*******************/
@@ -312,7 +319,7 @@
   }
   /*********************MENU*******************/
   .box {
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 20px;
   }

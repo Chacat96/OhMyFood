@@ -105,7 +105,7 @@ $background : #F6F6F6;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Initialement caché */
     animation: fadeInUp 1.2s forwards; /* Animation de 0.6s */
-    
+
     .bold {
         font-weight: bold;
     }
@@ -115,7 +115,14 @@ $background : #F6F6F6;
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
+        width: 80%;
         padding: 10px;
+
+        p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
 
     .box1__plat__prix {
@@ -156,9 +163,9 @@ $background : #F6F6F6;
 /*********************Animation Checkmark*******************/
 .checkmark {
     position: absolute;
-    right: -50px; /* Position de départ en dehors de la vue */
+    right: 0px; /* Position de départ en dehors de la vue */
     height: 100%;
-    width: 50px;
+    width: 0px;
     padding: 0;
     background-color: #99E2D0; 
     border-radius: 0 15px 15px 0;
@@ -177,6 +184,7 @@ $background : #F6F6F6;
 .box1__plat:hover .checkmark {
     right: 0; /* Position finale visible */
     opacity: 1;
+    width: 50px;
 }
 
 .box1__plat:hover .box1__plat__prix {
@@ -186,8 +194,10 @@ $background : #F6F6F6;
 
 .box1__plat:not(:hover) .box1__plat__prix {
     transform: translateX(0); /* Déplacer la div prix à gauche */
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
+
+
 
 /*********************BOUTON*******************/
 
@@ -295,25 +305,6 @@ button:hover {
     background-color: $Tertiaire
 }
 
-// .box1__plat {
-//     width: 90%;
-//     height: 50px;
-//     margin: auto;
-//     border-radius: 15px;
-//     padding: 10px;
-//     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-
-//     .bold {
-//         font-weight: bold;
-//     }
-
-//     .box1__plat__description {
-//         display: flex;
-//         justify-content: space-between;
-//         margin-top: 6px;
-//     }
-// }
-
 
 /*********************BOUTON*******************/
 
@@ -391,7 +382,7 @@ button:hover {
 /*********************MENU*******************/
 
 .box {
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 20px;
 }
