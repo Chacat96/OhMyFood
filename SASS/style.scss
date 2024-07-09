@@ -303,7 +303,7 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
     .fonctionnement {
         height: 180px;
         margin: auto;
-        width: 80%; // voir pour display à la place
+        width: 80%; 
 
         .fonctionnement__content {
             flex-direction: row;
@@ -361,7 +361,7 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
 
 /*************************************************Tablette***************************************************************/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     /*********************Header*******************/
 
@@ -386,7 +386,7 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         margin-top: 0;
     }
 
-    /*********************Fonctionnement*******************/
+    /*********************fonctionneent*******************/
 
     .fonctionnement h2 {
         text-align: center;
@@ -399,8 +399,8 @@ $degradation : linear-gradient(to top, $Primaire, $Secondaire);
         h2 {
             width: 80%;
             margin: auto;
-            text-align: center;
             padding: 20px;
+            text-align: center;
         }
 
         .restaurant__content {
