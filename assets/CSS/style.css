@@ -2,8 +2,6 @@
 /*********************Loader*******************/
 #loader {
   position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -165,6 +163,7 @@
   width: 90%;
   height: 220px;
   margin: auto;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 20px;
 }

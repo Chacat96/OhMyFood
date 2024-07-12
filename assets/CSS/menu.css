@@ -101,7 +101,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  width: 80%;
+  width: 60%;
   padding: 10px;
 }
 .box1__plat .box1__plat__description p {
@@ -252,6 +252,9 @@
     margin: auto;
     padding: 20px;
   }
+  .box1__plat__description {
+    width: 80%;
+  }
   .titre_menu {
     margin-left: 20px;
     position: relative;
@@ -324,6 +327,9 @@
     width: 80%;
     margin: auto;
     padding: 20px;
+  }
+  .box1__plat__description {
+    width: 80%;
   }
   .titre_menu {
     margin-left: 20px;
